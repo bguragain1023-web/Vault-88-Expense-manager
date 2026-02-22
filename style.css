@@ -1,0 +1,114 @@
+:root {
+  --primary-color: rgba(23, 128, 23, 0.893);
+  --secondary-color: red;
+  --bg-color: black;
+  --box-shadow: 0 4px 10px rgb(124, 157, 124);
+}
+* {
+  box-sizing: border-box;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  margin: 0;
+  background: rgb(16, 16, 16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  margin-top: 60px;
+  width: 80%;
+  background: var(--bg-color);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  border: solid var(--primary-color) 3px;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+}
+
+.title {
+  color: var(--primary-color);
+  text-align: center;
+}
+.title h1 {
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+}
+.title h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.total {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+.total span {
+  font-size: 4rem;
+  text-align: end;
+  color: green;
+}
+
+.input-detail {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.itemname {
+  height: 50px;
+  width: 350px;
+  background-color: rgba(245, 245, 245, 0.318);
+  color: white;
+  font-size: 2rem;
+  border: solid var(--primary-color) 2px;
+  border-radius: 20px;
+  margin: 1rem;
+}
+
+.amount {
+  height: 50px;
+  width: 350px;
+  background-color: rgba(245, 245, 245, 0.318);
+  color: white;
+  font-size: 2rem;
+  border: solid var(--primary-color) 2px;
+  border-radius: 20px;
+  margin: 1rem;
+}
+
+.btn {
+  background: var(--primary-color);
+  color: white;
+  font-size: 1.2rem;
+  height: 50px;
+  width: 175px;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+}
+.showlist {
+  height: 200px;
+}
+
+.btnclear {
+  background: var(--secondary-color);
+  color: white;
+  font-size: 1.2rem;
+  height: 50px;
+  width: 175px;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+}
