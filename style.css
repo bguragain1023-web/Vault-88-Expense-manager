@@ -90,7 +90,7 @@ body {
   margin: 1rem;
 }
 
-.btn {
+.add-btn {
   background: var(--primary-color);
   color: white;
   font-size: 1.2rem;
@@ -98,9 +98,7 @@ body {
   width: 175px;
   border-radius: 20px;
   box-shadow: var(--box-shadow);
-}
-.showlist {
-  height: 200px;
+  margin-bottom: 2rem;
 }
 
 .btnclear {
@@ -111,4 +109,53 @@ body {
   width: 175px;
   border-radius: 20px;
   box-shadow: var(--box-shadow);
+}
+
+.container > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.expense-list {
+  max-height: 250px;
+  overflow-y: auto;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.expense-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: white;
+  list-style: none;
+  border-bottom: 1px solid var(--primary-color);
+  padding: 15px 5px;
+  font-family: monospace;
+}
+
+.expense-list li span {
+  color: var(--secondary-color);
+  font-size: 0.7rem;
+  display: block;
+  text-transform: uppercase;
+}
+
+.delete-btn {
+  background: transparent;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  padding: 2px 8px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: monospace;
+}
+
+.delete-btn:hover {
+  background: var(--secondary-color);
+  color: white;
 }
